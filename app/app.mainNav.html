@@ -1,0 +1,66 @@
+<div class="container-fluid">
+<div class="row">  
+  <header id="header" class="col-md-12">
+      <ul class="header-inner clearfix">
+        <li><a href="#"><span id="logo">M61</span></a></li>
+        <li><input type="text" class="appInput superSearch" placeholder="Search"></li>
+        <li class="pull-right">
+          <ul class="top-menu">
+              <li><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a></li>
+              <li>
+              <button class="btn btn-default dropdown-toggle addNewButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Add New <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                    <li><a href="#">Deal</a></li>
+                    <li><a href="#">Transaction</a></li>
+                    <li><a href="#">Financing Line</a></li>
+              </ul>
+              </li>
+              <li>
+              <button class="btn btn-default dropdown-toggle userMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              K. Baderia<span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Calculator</a></li>
+                    <li><a href="#">Admin</a></li>
+                    <li><a href="#">Logout</a></li>
+              </ul>
+              </li>
+          </ul>
+        </li>
+      </ul>
+</header>
+
+<aside>
+  <div class="sideNavBar">
+         <nav class="navbar navbar-default sidebar" role="navigation">
+            <ul class="nav navbar-nav">
+              <li><a [routerLink]="['Deals']">Deals<span class="pull-right hidden-xs showopacity"><img src="images/dealIcon.png"></span></a></li>
+              <li ><a [routerLink]="['DealDetails']">Note<span class="pull-right hidden-xs showopacity"><img src="images/noteIcon.png"></span></a></li>      
+              <li ><a href="#">Property<span class="pull-right hidden-xs showopacity"><img src="images/propertyIcon.png"></span></a></li>
+              <li ><a href="#">Financing<span class="pull-right hidden-xs showopacity"><img src="images/financingIcon.png"></span></a></li>
+              <li ><a href="#">Periodic Data<span class="pull-right hidden-xs showopacity"><img src="images/periodicDataIcon.png"></span></a></li>
+              <li ><a href="#">Asset Mgmt<span class="pull-right hidden-xs showopacity"><img src="images/assetMgmtIcon.png"></span></a></li>
+              <li ><a href="#">Servicing<span class="pull-right hidden-xs showopacity"><img src="images/servicingIcon.png"></span></a></li>
+              <li ><a href="#">Reports<span class="pull-right hidden-xs showopacity"><img src="images/reportsIcon.png"></span></a></li>
+              <li ><a href="#">Integration<span class="pull-right hidden-xs showopacity"><img src="images/IntegrationIcon.png"></span></a></li>
+            </ul>
+      </nav>
+
+       </div>
+</aside>
+<div class="col-md-12" style="background-color: red;"><h1>STYLING ISSUES</h1></div>
+<section class="col-md-10 col-md-offset-1">
+      <div class="mainContentView">
+        <router-outlet></router-outlet>
+    </div>
+</section>
+</div>
+
+
+
+

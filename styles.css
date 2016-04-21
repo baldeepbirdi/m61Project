@@ -1,0 +1,370 @@
+body, input[text], button { font-family: 'Roboto', sans-serif !important; }
+
+html, body {
+    background-color: #edecec !important;
+    color: #5e5e5e;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 13px;
+    line-height: 1.42857;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+    display: block;
+}
+ul, ol{
+  margin-right: auto;
+  margin-left: auto;
+}
+.top-menu {
+    list-style: outside none none;
+}
+ul li{
+  display:inline;
+  padding: 0 10px;
+  vertical-align: middle;
+}
+ul li a{
+  color:white;
+}
+ul li span{
+  color:white;
+}
+#header {
+    -moz-user-select: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    left: 0;
+    min-height: 70px;
+    padding: 0 11px;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    background-color: #2196f3;
+}
+#logo{
+  font-size:28px;
+}
+.header-inner {
+    list-style: outside none none;
+    margin-bottom: 0;
+    padding: 20px 0;
+    position: relative;
+}
+.header-inner li img{
+  width:35px !important;
+  height:45px !important;
+}
+.header-inner li .glyphicon{
+  font-size:20px;
+}
+.pull-right {
+    float: right !important;
+}
+.superSearch{
+  width:18%;
+  color:#fff !important;
+  font-size:16px !important;
+  text-transform: uppercase;
+}
+.appInput{
+  box-shadow: none !important;
+  resize:none;
+  background-color: #2196f3;
+  border-left: 0 none;
+  border-right:0 none;
+  border-top: 0 none;
+  color:white;
+}
+.formInput{
+  box-shadow: none !important;
+  resize:none;
+  background-color: none;
+  border-left: 0 none;
+  border-right: 0 none;
+  border-top: 0 none;
+  border-bottom:1px solid #e0e0e0;
+  color: #9999a6;
+  padding-top:10px;
+}
+.addNewButton{
+  background-color: #00bcd4 !important;
+  border-radius: 2px !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12) !important;
+  color:#fff !important;
+  border:none !important;
+}
+.addNewButton .dropdown-menu{
+  float:none !important;
+  left:none !important; 
+}
+.addNoteButton{
+  background-color: #00bcd4 !important;
+  border-radius: 2px !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12) !important;
+  color:#fff !important;
+  border:none !important;
+  margin-bottom:10px;
+  margin-top:20px;
+  }
+.userMenuButton{
+  border-radius: 2px !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12) !important;
+  color:#777 !important;
+  border:none !important;
+}
+.userMenuButton span{
+  color:#777 !important;
+}
+.userMenuButton .dropdown-menu{
+  float:none !important;
+  left:none !important;
+}
+
+
+
+/*SIDEBAR*/
+
+@media (min-width: 765px) {
+
+    .main{
+      position: absolute;
+      width: calc(100% - 40px); 
+      margin-left: 40px;
+      float: right;
+
+    }
+  .sideNavBar{
+    width: 50px;
+    position: fixed;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: none;
+    transition: 0.5s;
+    padding-top: 75px;
+  }
+  nav.sidebar:hover{
+      margin-left: 200px;
+    }
+    nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+      margin-left: 0px;
+    }
+     nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
+      text-align: center;
+      width: 100%;
+      margin-left: 0px;
+    }
+
+    .sideNavBar ul li{
+      padding:0;
+    }
+    
+    nav.sidebar a{
+      padding-right: 13px;
+    }
+
+    nav.sidebar .navbar-nav > li:first-child{
+      border-top: 1px #e5e5e5 solid;
+    }
+
+    nav.sidebar .navbar-nav > li{
+      border-bottom: 1px #e5e5e5 solid;
+    }
+
+    nav.sidebar .navbar-nav .open .dropdown-menu {
+      position: static;
+      float: none;
+      width: auto;
+      margin-top: 0;
+      background-color: transparent;
+      border: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+
+    nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+      padding: 0 0px 0 0px;
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+      color: black;
+    }
+    .navbar{
+      border-radius:0 !important;
+    }
+
+    nav.sidebar{
+      width: 210px;
+      height: 100%;
+      margin-left: -160px;
+      float: left;
+      margin-bottom: 0px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    nav.sidebar li {
+      width: 100%;
+    }
+    nav.sidebar li a{
+      color:black !important;
+    }
+
+    nav.sidebar:hover{
+      margin-left: 0px;
+    }
+
+    .forAnimate{
+      opacity: 0;
+    }
+     .navbar-nav li a span img{
+    width:25px;
+    height:25px;
+  }
+  .mainContent{
+    margin-top:3%;
+  }
+  .dashboard .panel{
+    border-radius:0px !important;
+  }
+  .mydealsPanel .panel-heading{
+    background-color: #8bc34a !important;
+    border: #8bc34a !important;
+    color:#ffffff !important;
+  }
+  .starredPropPanel .panel-heading{
+    background-color: #ff9800 !important;
+    border: #ff9800 !important;
+    color:#ffffff !important;
+  }
+  .lastDealsPanel .panel-heading{
+    background-color: #607d8b !important;
+    border: #607d8b !important;
+    color: #ffffff !important;
+  }
+  .upcomingPanel .panel-heading{
+    background-color: #00bcd4 !important;
+    border: #00bcd4 !important;
+    color:#ffffff !important;
+  }
+  .newDealsPanel .panel-heading{
+    background-color: #e91e63 !important;
+    border:#e91e63 !important;
+    color:#ffffff !important;
+  }
+  table tr:hover{
+    cursor: pointer;
+  }
+  .contentContainerOffset{
+    background-color:#ffffff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom:2%;
+  }
+  .contentContainerOffset table{
+    font-size: 11px;
+  }
+  .appTabs li{
+    padding:0 !important;
+  }
+  .appTabs li a{
+    border-top:none !important;
+    border-left:none !important;
+    border-right:none !important;
+    border-bottom: 1px solid #fff !important;
+    color:black !important;
+    background-color:transparent !important;
+  }
+  .appTabs li a:hover{
+    cursor: pointer;
+    background-color:#dedede;
+    color:#2196f3 !important;
+  }
+  .appTabs li.active{
+    border-bottom: 2px solid #2196f3 !important;
+  }
+  .actionNav{
+    margin-bottom:2%;
+  }
+  .actionNav ul{
+    margin-bottom:3px !important;
+  }
+  .actionNav ul li span{
+    color: #777 !important;
+    font-size:18px;
+  }
+
+/*!!!!!!FLOATING LABELS!!!!!!!*/
+
+    
+.group{ 
+  position:relative; 
+  margin-bottom: 20px; 
+  margin-left: 15px;
+}
+
+.inputMaterial        {
+  font-size:14px;
+  padding:0px 10px 10px 5px;
+  display:block;
+  width:100%;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+
+
+/* LABEL ======================================= */
+
+label          {
+  color:#999; 
+  font-size:14px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:5px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+.inputMaterial:focus ~ label, .inputMaterial:valid ~ label    {
+  top:-15px;
+  font-size:14px;
+  color: #2196f3;
+}
+
+/* BOTTOM BARS ================================= */
+.bar  { position:relative; display:block; width:100%; }
+.bar:before, .bar:after   {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background: #2196f3; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+.inputMaterial:focus ~ .bar:before, .inputMaterial:focus ~ .bar:after {
+  width:50%;
+}
+
+#notesHeader{
+  display:inline-block;
+}
+.addNewNote{
+  vertical-align: super !important;
+}
+.boxHeader{
+  background-color:#f7f7f7;
+}
