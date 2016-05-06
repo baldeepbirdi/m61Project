@@ -30,6 +30,52 @@ ul li a{
 ul li span{
   color:white;
 }
+input, textarea {
+  outline: none;
+} 
+.pull-right .dropdown-menu {
+    left: auto;
+    right: auto;
+}
+
+/*FLAT BUTTONS*/
+.paper-button {
+    position: relative;
+    padding: 4px 0;
+    margin: 1em;
+    width: 160px;
+    overflow: hidden;
+    user-select: none;
+    color: #4285f4;
+    text-transform: uppercase;
+    border-radius: 3px;
+    outline-color: #ccc;
+}
+.paper-button:hover {
+        cursor: pointer;
+    }
+button.paper-button {
+  border:0;
+  font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+  font-size: 1em;
+  line-height: 25px;
+  background-color: #fff;
+}
+
+.paper-button.paper-floating-action-button {
+    border:none;
+    font-size:30px;
+    color:white;
+    background-color: #ff4081;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 10px 10px;
+    -webkit-box-shadow: 2px 3px 3px 0px rgba(41, 41, 41, .3);
+       -moz-box-shadow: 2px 3px 3px 0px rgba(41, 41, 41, .3);
+            box-shadow: 2px 3px 3px 0px rgba(41, 41, 41, .3);
+}
+
 #header {
     -moz-user-select: none;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
@@ -57,15 +103,13 @@ ul li span{
 .header-inner li .glyphicon{
   font-size:20px;
 }
-.pull-right {
-    float: right !important;
-}
 .superSearch{
   width:18%;
   color:#fff !important;
   font-size:16px !important;
   text-transform: uppercase;
 }
+
 .appInput{
   box-shadow: none !important;
   resize:none;
@@ -86,6 +130,7 @@ ul li span{
   color: #9999a6;
   padding-top:10px;
 }
+
 .addNewButton{
   background-color: #00bcd4 !important;
   border-radius: 2px !important;
@@ -158,6 +203,10 @@ ul li span{
 
     .sideNavBar ul li{
       padding:0;
+    }
+    .sideNavBar ul li:hover{
+      background-color:#d8f2ff;
+      cursor: pointer;
     }
     
     nav.sidebar a{
@@ -284,6 +333,7 @@ ul li span{
   }
   .actionNav{
     margin-bottom:2%;
+    padding-left:0 !important;
   }
   .actionNav ul{
     margin-bottom:3px !important;
@@ -304,7 +354,7 @@ ul li span{
 
 .inputMaterial        {
   font-size:14px;
-  padding:0px 10px 10px 5px;
+  padding:0px 10px 5px 5px;
   display:block;
   width:100%;
   border:none;
@@ -365,6 +415,9 @@ label          {
 .addNewNote{
   vertical-align: super !important;
 }
-.boxHeader{
-  background-color:#f7f7f7;
+#editableHeaderName{
+  display:inline;
+}
+.searchButton:hover{
+  cursor: pointer;
 }

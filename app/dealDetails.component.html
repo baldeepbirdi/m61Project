@@ -2,20 +2,29 @@
 <div class="row">
 
       <div class="actionNav col-md-12">
+            <!-- <div class="col-md-6">
+                <div class="group">      
+                  <input class="inputMaterial" type="text" required>
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Deal Name</label>
+                </div>
+              </div> -->
+            <h3 id="editableHeaderName">Deal Name</h3>
             <ul class="pull-right">
               <li><a href="#"><span class="glyphicon glyphicon-floppy-disk"></span></a></li>
               <li><a href="#"><span class="glyphicon glyphicon-trash"></span></a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-th"></span></a>
                   <ul class="dropdown-menu profileDropdown">
-                    <li><a href="#">w/o saving</a></li>
+                    <li><a href="#">Without saving</a></li>
                     <li><a href="#">View Calc Log</a></li>
                   </ul>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-option-vertical"></span></a>
                   <ul class="dropdown-menu profileDropdown">
-                    <li><a href="#">Upload Calc</a></li>
+                    <li><a href="#">Upload</a></li>
                       <li><a href="#">Rules</a></li>
                       <li><a href="#">Audit Log</a></li>
                       <li><a href="#">Attachments</a></li>
@@ -26,7 +35,7 @@
             </ul>
       </div>
       <ul class="nav nav-tabs appTabs" id="myTab">
-        <li class="active"><a data-target="#home" data-toggle="tab">Home</a></li>
+        <li class="active"><a data-target="#home" data-toggle="tab">Details</a></li>
         <li><a data-target="#profile" data-toggle="tab">Profile</a></li>
         <li><a data-target="#messages" data-toggle="tab">Messages</a></li>
         <li><a data-target="#settings" data-toggle="tab">Settings</a></li>
@@ -35,19 +44,9 @@
       <div class="tab-content">
         <div class="tab-pane active" id="home">
           <div class="contentContainerOffset col-md-12">
-            <div class="boxHeader col-md-12">
-              <h3>Deal Details</h3>
-            </div>
+            
             
              <form action="" method="post">
-              <div class="col-md-12">
-                <div class="group">      
-                  <input class="inputMaterial" type="text" required>
-                  <span class="highlight"></span>
-                  <span class="bar"></span>
-                  <label>Deal Name</label>
-                </div>
-              </div>
               <div class="col-md-3">
                   <div class="group">      
                   <input class="inputMaterial" type="password" required>
@@ -157,8 +156,7 @@
           <div class="contentContainerOffset col-md-12">
               <div class="boxHeader col-md-12">
                 <h3 id="notesHeader">Notes</h3>
-              <button class="btn btn-default addNewNote" type="button" aria-expanded="false">
-              Add New
+              <button class="paper-button paper-floating-action-button pull-right">+
               </button>
               </div>
                   <table class="table table-condensed table-hover table-striped">
