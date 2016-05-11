@@ -207,6 +207,19 @@ button.paper-button {
     -webkit-transition:4s ease;
     padding-top: 75px;
   }
+  .sideNavTopBar{
+    width: 50px;
+    position: fixed;
+    height: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: none;
+    transition: 4s ease; 
+    -moz-transition:4s ease; 
+    -webkit-transition:4s ease;
+    padding-top: 75px;
+  }
   nav.sidebar:hover{
       margin-left: 200px;
     }
@@ -289,7 +302,7 @@ button.paper-button {
     height:25px;
   }
   .mainContent{
-    margin-top:3%;
+    margin-top:10%;
   }
   .dashboard .panel{
     border-radius:0px !important;
@@ -326,6 +339,8 @@ button.paper-button {
     background-color:#ffffff;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
     margin-bottom:2%;
+    padding-left:0px !important;
+    padding-right:0px !important;
   }
   .contentContainerOffset table{
     font-size: 11px;
@@ -445,3 +460,10 @@ label          {
 .ng-valid.ng-touched {
   border-bottom:2px solid green;
 }
+.boxHeader{
+  background-color: #f7f7f7;
+}
+/*.boxHeader{
+  padding-left:0px !important;
+  padding-right:0px !important;
+}*/
