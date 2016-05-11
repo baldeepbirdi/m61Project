@@ -39,8 +39,8 @@ System.register(['angular2/core', 'angular2/http', 'angular2/router', './dashboa
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        templateUrl: 'app/app.mainNav.html',
                         directives: [router_1.ROUTER_DIRECTIVES],
+                        templateUrl: 'app/app.mainNav.html',
                         providers: [http_1.HTTP_PROVIDERS, router_1.ROUTER_PROVIDERS]
                     }),
                     router_1.RouteConfig([
@@ -53,9 +53,7 @@ System.register(['angular2/core', 'angular2/http', 'angular2/router', './dashboa
                 return AppComponent;
             }());
             exports_1("AppComponent", AppComponent);
-            
         }
-
     }
 });
 //# sourceMappingURL=app.component.js.map

@@ -5,5 +5,4 @@ import { Component } from 'angular2/core';
 	templateUrl: 'app/dealDetails.component.html'
 })
 export class DealDetailsComponent {
-
 }

@@ -11,6 +11,7 @@ System.register(['angular2/platform/browser', './app.component'], function(expor
                 app_component_1 = app_component_1_1;
             }],
         execute: function() {
+            // import {AgGridNg2} from 'ag-grid-ng2/main';
             browser_1.bootstrap(app_component_1.AppComponent, []);
         }
     }

@@ -46,28 +46,36 @@
           <div class="contentContainerOffset col-md-12">
             
             
-             <form action="" method="post">
+             <form #dealForm="ngForm">
               <div class="col-md-3">
                   <div class="group">      
-                  <input class="inputMaterial" type="password" required>
+                  <input class="inputMaterial" type="text" required
+                    ngControl="dealStatus"
+                  >
                   <span class="highlight"></span>
                   <span class="bar"></span>
                   <label>Status</label>
                 </div>
                 <div class="group">      
-                  <input class="inputMaterial" type="text" required>
+                  <input class="inputMaterial" type="text" 
+                  required
+                  ngControl="loanPurpose">
                   <span class="highlight"></span>
                   <span class="bar"></span>
                   <label>Loan Purpose</label>
                 </div>
                 <div class="group">      
-                  <input class="inputMaterial" type="text" required>
+                  <input class="inputMaterial" type="text" 
+                  required
+                  ngControl="loanProgram">
                   <span class="highlight"></span>
                   <span class="bar"></span>
                   <label>Loan Program</label>
                 </div>
                 <div class="group">      
-                  <input class="inputMaterial" type="text" required>
+                  <input class="inputMaterial" type="text" 
+                  required
+                  ngControl="dealType">
                   <span class="highlight"></span>
                   <span class="bar"></span>
                   <label>Deal Type</label>
@@ -75,25 +83,33 @@
               </div>
                <div class="col-md-3">
                 <div class="group">      
-                  <input class="inputMaterial" type="text" required>
+                  <input class="inputMaterial" type="text" 
+                  required
+                  ngControl="borrowerRequest">
                   <span class="highlight"></span>
                   <span class="bar"></span>
                   <label>Borrower's Request</label>
                 </div>
                   <div class="group">      
-                  <input class="inputMaterial" type="password" required>
+                  <input class="inputMaterial" type="text" 
+                  required
+                  ngControl="recommendedLoan">
                   <span class="highlight"></span>
                   <span class="bar"></span>
                   <label>Recommended Loan</label>
                 </div>
                 <div class="group">      
-                  <input class="inputMaterial" type="text" required>
+                  <input class="inputMaterial" type="text" 
+                  required
+                  ngControl="futureFundingAmount">
                   <span class="highlight"></span>
                   <span class="bar"></span>
                   <label>Future Funding Amount</label>
                 </div>
                 <div class="group">      
-                  <input class="inputMaterial" type="text" required>
+                  <input class="inputMaterial" type="text" 
+                  required
+                  ngControl="appRecieved">
                   <span class="highlight"></span>
                   <span class="bar"></span>
                   <label>App Recieved</label>
@@ -101,25 +117,33 @@
               </div>
               <div class="col-md-3">
                 <div class="group">      
-                  <input class="inputMaterial" type="text" required>
+                  <input class="inputMaterial" type="text" 
+                  required
+                  ngControl="estClosingDate">
                   <span class="highlight"></span>
                   <span class="bar"></span>
                   <label>Est Closing Date</label>
                 </div>
                   <div class="group">      
-                  <input class="inputMaterial" type="password" required>
+                  <input class="inputMaterial" type="text" 
+                  required
+                  ngControl="source">
                   <span class="highlight"></span>
                   <span class="bar"></span>
                   <label>Source</label>
                 </div>
                 <div class="group">      
-                  <input class="inputMaterial" type="text" required>
+                  <input class="inputMaterial" type="text" 
+                  required
+                  ngControl="brokerageFirm">
                   <span class="highlight"></span>
                   <span class="bar"></span>
                   <label>Brokerage Firm</label>
                 </div>
                 <div class="group">      
-                  <input class="inputMaterial" type="text" required>
+                  <input class="inputMaterial" type="text" 
+                  required
+                  ngControl="brokerageContract">
                   <span class="highlight"></span>
                   <span class="bar"></span>
                   <label>Brokerage Contact</label>
@@ -127,31 +151,41 @@
               </div>
               <div class="col-md-3">
                 <div class="group">      
-                  <input class="inputMaterial" type="text" required>
+                  <input class="inputMaterial" type="text" 
+                  required
+                  ngControl="sponsor">
                   <span class="highlight"></span>
                   <span class="bar"></span>
                   <label>Sponsor</label>
                 </div>
                   <div class="group">      
-                  <input class="inputMaterial" type="password" required>
+                  <input class="inputMaterial" type="text" 
+                  required
+                  ngControl="principal">
                   <span class="highlight"></span>
                   <span class="bar"></span>
                   <label>Principal</label>
                 </div>
                 <div class="group">      
-                  <input class="inputMaterial" type="text" required>
+                  <input class="inputMaterial" type="text" 
+                  required
+                  ngControl="liquidity">
                   <span class="highlight"></span>
                   <span class="bar"></span>
                   <label>Liquidity</label>
                 </div>
                 <div class="group">      
-                  <input class="inputMaterial" type="text" required>
+                  <input class="inputMaterial" type="text" 
+                  required
+                  ngControl="networth">
                   <span class="highlight"></span>
                   <span class="bar"></span>
                   <label>Net Worth</label>
                 </div>
               </div>
               </form>
+
+
           </div>
           <div class="contentContainerOffset col-md-12">
               <div class="boxHeader col-md-12">
