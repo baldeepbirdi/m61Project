@@ -187,7 +187,7 @@ button.paper-button {
 
 @media (min-width: 765px) {
 
-    .main{
+  .main{
       position: absolute;
       width: calc(100% - 40px); 
       margin-left: 40px;
@@ -220,17 +220,6 @@ button.paper-button {
     -webkit-transition:4s ease;
     padding-top: 75px;
   }
-  nav.sidebar:hover{
-      margin-left: 200px;
-    }
-    nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-      margin-left: 0px;
-    }
-     nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
-      text-align: center;
-      width: 100%;
-      margin-left: 0px;
-    }
 
     .sideNavBar ul li{
       padding:0;
@@ -239,48 +228,18 @@ button.paper-button {
       background-color:#d8f2ff;
       cursor: pointer;
     }
-    
-    nav.sidebar a{
-      padding-right: 13px;
-    }
-
-    nav.sidebar .navbar-nav > li:first-child{
-      border-top: 1px #e5e5e5 solid;
-    }
-
     nav.sidebar .navbar-nav > li{
       border-bottom: 1px #e5e5e5 solid;
     }
-
-    nav.sidebar .navbar-nav .open .dropdown-menu {
-      position: static;
-      float: none;
-      width: auto;
-      margin-top: 0;
-      background-color: transparent;
-      border: 0;
-      -webkit-box-shadow: none;
-      box-shadow: none;
-    }
-
-    nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
-      padding: 0 0px 0 0px;
-    }
-
-    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-      color: black;
-    }
-    .navbar{
-      border-radius:0 !important;
-    }
-
     nav.sidebar{
-      width: 210px;
+      position:absolute;
+      width: 60px;
       height: 100%;
-      margin-left: -160px;
+      margin-left: 0px;
       float: left;
       margin-bottom: 0px;
       box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+      z-index: 2;
     }
 
     nav.sidebar li {
@@ -290,8 +249,26 @@ button.paper-button {
       color:black !important;
     }
 
-    nav.sidebar:hover{
-      margin-left: 0px;
+    nav.sidebarHidden{
+      position:absolute;
+      width: 170px;
+      height: 100%;
+      margin-left: -150px;
+      float: left;
+      margin-bottom: 0px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
+    nav.sidebarHidden li{
+        width:100%;
+    }
+    nav.sidebarHidden li a{
+      color:black !important;
+    }
+
+    #sidebar:hover ~ #sidebarHidden{
+      transition: 1s;
+      margin-left:0px;
     }
 
     .forAnimate{
@@ -301,6 +278,7 @@ button.paper-button {
     width:25px;
     height:25px;
   }
+
   .mainContent{
     margin-top:10%;
   }
@@ -328,8 +306,8 @@ button.paper-button {
     color:#ffffff !important;
   }
   .newDealsPanel .panel-heading{
-    background-color: #e91e63 !important;
-    border:#e91e63 !important;
+    background-color: #ff9800 !important;
+    border:#ff9800 !important;
     color:#ffffff !important;
   }
   table tr:hover{
@@ -457,9 +435,9 @@ label          {
 .ng-invalid.ng-touched {
     border-bottom:2px solid red;
 }
-.ng-valid.ng-touched {
+/*.ng-valid.ng-touched {
   border-bottom:2px solid green;
-}
+}*/
 .boxHeader{
   background-color: #f7f7f7;
 }

@@ -37,35 +37,9 @@
 </header>
 
 <aside>
-  <div class="sideNavTopBar">
-    <nav class="navbar navbar-default sidebar" role="navigation">
-        <ul class="nav navbar-nav">
-          <li><a [routerLink]="['Deals']"><span class="hidden-xs showopacity"><img src="images/dealIcon.png"></span></a></li>
-              <li ><a [routerLink]="['DealDetails']"><span class="hidden-xs showopacity"><img src="images/noteIcon.png"></span></a></li>      
-              <li ><a href="#"><span class="hidden-xs showopacity"><img src="images/propertyIcon.png"></span></a></li>
-              <li ><a href="#"><span class="hidden-xs showopacity"><img src="images/financingIcon.png"></span></a></li>
-              <li ><a href="#"><span class="hidden-xs showopacity"><img src="images/periodicDataIcon.png"></span></a></li>
-              <li ><a href="#"><span class="hidden-xs showopacity"><img src="images/assetMgmtIcon.png"></span></a></li>
-              <li ><a href="#"><span class="hidden-xs showopacity"><img src="images/servicingIcon.png"></span></a></li>
-              <li ><a href="#"><span class="hidden-xs showopacity"><img src="images/reportsIcon.png"></span></a></li>
-              <li ><a href="#"><span class="hidden-xs showopacity"><img src="images/IntegrationIcon.png"></span></a></li>
-        </ul>
-    </nav>
-  </div>
-
-  <!-- <div class="sideNavBar">
-         <nav class="navbar navbar-default sidebar" role="navigation">
+  <div class="sideNavBar">
+         <!-- <nav class="navbar navbar-default sidebar" role="navigation">
             <ul class="nav navbar-nav">
-                <li><a [routerLink]="['Deals']">Deals</a></li>
-                  <li ><a [routerLink]="['DealDetails']">Notes</a></li>      
-                  <li ><a href="#">Properties</a></li>
-                  <li ><a href="#">Financing</a></li>
-                  <li ><a href="#">Periodic Data</a></li>
-                  <li ><a href="#">Asset Mgmt</a></li>
-                  <li ><a href="#">Servicing</a></li>
-                  <li ><a href="#">Reports</a></li>
-                  <li ><a href="#">Integration</a></li>
-             
               <li><a [routerLink]="['Deals']">Deals<span class="pull-right hidden-xs showopacity"><img src="images/dealIcon.png"></span></a></li>
               <li ><a [routerLink]="['DealDetails']">Notes<span class="pull-right hidden-xs showopacity"><img src="images/noteIcon.png"></span></a></li>      
               <li ><a href="#">Properties<span class="pull-right hidden-xs showopacity"><img src="images/propertyIcon.png"></span></a></li>
@@ -76,11 +50,35 @@
               <li ><a href="#">Reports<span class="pull-right hidden-xs showopacity"><img src="images/reportsIcon.png"></span></a></li>
               <li ><a href="#">Integration<span class="pull-right hidden-xs showopacity"><img src="images/IntegrationIcon.png"></span></a></li>
             </ul>
+      </nav> -->
+      <nav class="navbar navbar-default sidebar" id="sidebar" role="navigation">
+            <ul class="nav navbar-nav">
+              <li><a [routerLink]="['Deals']"><span class="pull-right hidden-xs showopacity"><img src="images/dealIcon.png"></span></a></li>
+              <li ><a [routerLink]="['DealDetails']"><span class="pull-right hidden-xs showopacity"><img src="images/noteIcon.png"></span></a></li>      
+              <li ><a href="#"><span class="pull-right hidden-xs showopacity"><img src="images/propertyIcon.png"></span></a></li>
+              <li ><a href="#"><span class="pull-right hidden-xs showopacity"><img src="images/financingIcon.png"></span></a></li>
+              <li ><a href="#"><span class="pull-right hidden-xs showopacity"><img src="images/periodicDataIcon.png"></span></a></li>
+              <li ><a href="#"><span class="pull-right hidden-xs showopacity"><img src="images/assetMgmtIcon.png"></span></a></li>
+              <li ><a href="#"><span class="pull-right hidden-xs showopacity"><img src="images/servicingIcon.png"></span></a></li>
+              <li ><a href="#"><span class="pull-right hidden-xs showopacity"><img src="images/reportsIcon.png"></span></a></li>
+              <li ><a href="#"><span class="pull-right hidden-xs showopacity"><img src="images/IntegrationIcon.png"></span></a></li>
+            </ul>
       </nav>
-
-       </div> -->
+      <nav class="navbar navbar-default sidebarHidden" id="sidebarHidden"role="navigation">
+            <ul class="nav navbar-nav">
+              <li><a class="pull-right" [routerLink]="['Deals']">Deals</a></li>
+              <li><a class="pull-right" [routerLink]="['DealDetails']">Notes</a></li>      
+              <li><a class="pull-right" href="#">Properties</a></li>
+              <li><a class="pull-right" href="#">Financing</a></li>
+              <li><a class="pull-right" href="#">Periodic Data</a></li>
+              <li><a class="pull-right" href="#">Asset Mgmt</a></li>
+              <li><a class="pull-right" href="#">Servicing</a></li>
+              <li><a class="pull-right" href="#">Reports</a></li>
+              <li><a class="pull-right" href="#">Integration</a></li>
+            </ul>
+      </nav>
+       </div>
 </aside>
-<!-- <div class="col-md-12" style="background-color: red;"><h1>STYLING ISSUES</h1></div> -->
 <section class="col-md-10 col-md-offset-1">
       <div class="mainContentView">
         <router-outlet></router-outlet>
