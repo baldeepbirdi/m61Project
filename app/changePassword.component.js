@@ -11,28 +11,27 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var DealDetailsComponent;
+    var ChangePasswordComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            // import * as wjGrid from 'wijmo/wijmo.angular2.grid';
-            DealDetailsComponent = (function () {
-                function DealDetailsComponent() {
+            ChangePasswordComponent = (function () {
+                function ChangePasswordComponent() {
                 }
-                DealDetailsComponent = __decorate([
+                ChangePasswordComponent = __decorate([
                     core_1.Component({
-                        selector: 'deal-details',
-                        templateUrl: 'app/dealDetails.component.html'
+                        selector: 'change-password',
+                        templateUrl: 'app/changePassword.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], DealDetailsComponent);
-                return DealDetailsComponent;
+                ], ChangePasswordComponent);
+                return ChangePasswordComponent;
             }());
-            exports_1("DealDetailsComponent", DealDetailsComponent);
+            exports_1("ChangePasswordComponent", ChangePasswordComponent);
         }
     }
 });
-//# sourceMappingURL=dealDetails.component.js.map
+//# sourceMappingURL=changePassword.component.js.map

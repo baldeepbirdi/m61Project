@@ -11,28 +11,27 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var DealDetailsComponent;
+    var GridComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            // import * as wjGrid from 'wijmo/wijmo.angular2.grid';
-            DealDetailsComponent = (function () {
-                function DealDetailsComponent() {
+            GridComponent = (function () {
+                function GridComponent() {
                 }
-                DealDetailsComponent = __decorate([
+                GridComponent = __decorate([
                     core_1.Component({
-                        selector: 'deal-details',
-                        templateUrl: 'app/dealDetails.component.html'
+                        selector: 'my-grid',
+                        template: '<h1>testing</h1><h1>testing</h1><h1>testing</h1><h1>testing</h1><wj-flex-grid></wj-flex-grid>'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], DealDetailsComponent);
-                return DealDetailsComponent;
+                ], GridComponent);
+                return GridComponent;
             }());
-            exports_1("DealDetailsComponent", DealDetailsComponent);
+            exports_1("GridComponent", GridComponent);
         }
     }
 });
-//# sourceMappingURL=dealDetails.component.js.map
+//# sourceMappingURL=grid.component.js.map

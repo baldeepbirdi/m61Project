@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/http', 'angular2/router', './dashboard.component', './deals.component', './dealDetails.component'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/http', 'angular2/router', './dashboard.component', './deals.component', './dealDetails.component', './changePassword.component', './grid.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/http', 'angular2/router', './dashboa
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, http_1, router_1, dashboard_component_1, deals_component_1, dealDetails_component_1;
+    var core_1, http_1, router_1, dashboard_component_1, deals_component_1, dealDetails_component_1, changePassword_component_1, grid_component_1;
     var AppComponent;
     return {
         setters:[
@@ -31,7 +31,14 @@ System.register(['angular2/core', 'angular2/http', 'angular2/router', './dashboa
             },
             function (dealDetails_component_1_1) {
                 dealDetails_component_1 = dealDetails_component_1_1;
-            }],
+            },
+            function (changePassword_component_1_1) {
+                changePassword_component_1 = changePassword_component_1_1;
+            },
+            function (grid_component_1_1) {
+                grid_component_1 = grid_component_1_1;
+            }
+            ],
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
@@ -46,7 +53,9 @@ System.register(['angular2/core', 'angular2/http', 'angular2/router', './dashboa
                     router_1.RouteConfig([
                         { path: '/dashboard', as: 'Dashboard', component: dashboard_component_1.DashboardComponent, useAsDefault: true },
                         { path: '/deals', as: 'Deals', component: deals_component_1.DealsComponent },
-                        { path: '/dealDetails', as: 'DealDetails', component: dealDetails_component_1.DealDetailsComponent }
+                        { path: '/dealDetails', as: 'DealDetails', component: dealDetails_component_1.DealDetailsComponent },
+                        { path: '/changePassword', as: 'ChangePassword', component: changePassword_component_1.ChangePasswordComponent },
+                        { path: '/grid', as: 'Grid', component: grid_component_1.GridComponent}
                     ]), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
