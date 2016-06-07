@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <base href="/"> -->
+
+  <title>M61</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="login_style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  
+</head>
+
+<body>
+<div class="loginContainer">
+   <div class="container">
+    <div class="row">
+        <div class="form_bg">
+           <h2 class="align-center">M61 Login</h2>
+        <form class="inputCenterAlign" #dealForm="ngForm">
+              <div class="group align-center">      
+                  <input class="inputMaterial" type="text" required
+                    ngControl="dealStatus"
+                  >
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Username</label>
+              </div>
+              <div class="group align-center">      
+                  <input class="inputMaterial" type="password" 
+                  required
+                  ngControl="loanPurpose">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Password</label>
+              </div>
+              <div class="loginButton">
+                    <button type="submit" class="btn btn-default" id="login">Login</button>
+                </div>
+        </form>
+        </div>
+       
+        
+    </div>
+</div>
+</div>
+ 
+</body>
+
+</html>
