@@ -29,7 +29,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 DealsComponent = __decorate([
                     core_1.Component({
                         selector: 'my-deals',
-                        templateUrl: 'app/deals.component.html'
+                        templateUrl: 'app/deals.component.html',
                     }), 
                     __metadata('design:paramtypes', [])
                 ], DealsComponent);

@@ -82,129 +82,22 @@
   </table>
   </div>
 </div>
-  <!-- <nav class="navbar actionNav">
-      <ul class="nav nav-pills navbar-right">
-        <li role="presentation"><a href="#">Save</a></li>
-        <li role="presentation"><a href="#">Discard</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Calc<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">w/o saving</a></li>
-            <li><a href="#">View Calc Log</a></li>
-          </ul>
-        </li>
-        <li role="presentation"><a href="#">Upload Calc</a></li>
-        <li role="presentation"><a href="#">Rules</a></li>
-        <li role="presentation"><a href="#">Audit Log</a></li>
-        <li role="presentation"><a href="#">Attachments</a></li>
-        <li role="presentation"><a href="#">Export</a></li>
-        <li role="presentation"><a href="#">Comments</a></li>
-      </ul>
-    </nav> 
-        -->
 
-     
-   <!--  <div class="col-md-offset-1">
-      <ul class="nav nav-tabs">
-        <li role="presentation" class="active"><a href="#">Main</a></li>
-        <li role="presentation"><a href="#">PayRules</a></li>
-        <li role="presentation"><a href="#">Misc</a></li>
-      </ul>
+<!-- !!!!! WIJMO GRID !!!!! -->
 
-      <div class="testBox">
-        <div class="panel panel-default"> -->
-          <!-- Default panel contents -->
-          <!-- <div class="panel-heading">Main Table</div> -->
-          <!-- Table -->
-          <!-- <table class="table">
-              <thead>
-            <tr>
-              <th>Type</th>
-              <th>Amount</th>
-              <th>Date</th>
-              <th>Employee</th>
-              <th>Name</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Funded</td>
-              <td>$1,000,000</td>
-              <td>12/30/2015</td>
-              <td>Broker</td>
-              <td>John Doe</td>
-            </tr>
-            <tr>
-              <td>Acquisition</td>
-              <td>$2,000,000</td>
-              <td>10/8/2015</td>
-              <td>CMBS Gurus</td>
-              <td>David Doe</td>
-            </tr>
-            <tr>
-              <td>Structured Finance</td>
-              <td>$200,000</td>
-              <td>N/A</td>
-              <td>John Doe</td>
-              <td>N/A</td>
-            </tr>
-            <tr>
-              <td>Construction</td>
-              <td>N/A</td>
-              <td>N/A</td>
-              <td>N/A</td>
-              <td>N/A</td>
-            </tr>
-          </tbody>
-          </table>
-        </div>
-    </div>  
+<wj-flex-grid 
+  class="grid" 
+  items-source="ctx.data"
+  is-read-only="true">
+    <wj-flex-grid-column header="ID" width="80"></wj-flex-grid-column>
+    <wj-flex-grid-column header="Date"></wj-flex-grid-column>
+    <wj-flex-grid-column header="Revenue" format="n0"></wj-flex-grid-column>
+    <wj-flex-grid-column header="Expense" format="n0"></wj-flex-grid-column>
+    <wj-flex-grid-column header="Discount" format="p0" 
+        ng-style="{true:{color:'red'}, false:{color:'green'}}[$item.discount > 0.12]">
+    </wj-flex-grid-column>
+</wj-flex-grid>
 
-    <div class="testBox">
-        <div class="panel panel-default"> -->
-          <!-- Default panel contents -->
-          <!-- <div class="panel-heading">Notes</div> -->
-          <!-- Table -->
-         <!--  <table class="table">
-              <thead>
-            <tr>
-              <th>Note ID</th>
-              <th>Name</th>
-              <th>Rate</th>
-              <th>Term</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Funded</td>
-              <td>$1,000,000</td>
-              <td>12/30/2015</td>
-              <td>Broker</td>
-            </tr>
-            <tr>
-              <td>Acquisition</td>
-              <td>$2,000,000</td>
-              <td>10/8/2015</td>
-              <td>CMBS Gurus</td>
-            </tr>
-            <tr>
-              <td>Structured Finance</td>
-              <td>$200,000</td>
-              <td>N/A</td>
-              <td>John Doe</td>
-            </tr>
-            <tr>
-              <td>Construction</td>
-              <td>N/A</td>
-              <td>N/A</td>
-              <td>N/A</td>
-            </tr>
-          </tbody>
-          </table>
-        </div>
-    </div>  
-
-    </div> -->
 
 
 </div>
